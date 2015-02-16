@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'add',
+1 verbose cli   'package.json@1.0.1',
+1 verbose cli   '[latest]' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose dist-tag add [latest] to package.json@1.0.1
+6 silly mapToRegistry name package.json
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry http://localhost:15443/
+9 silly mapToRegistry uri http://localhost:15443/package.json
+10 verbose request uri http://localhost:15443/-/package/package.json/dist-tags
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 17:46:12
+13 verbose request id 92e47a4a6b094173
+14 http request GET http://localhost:15443/-/package/package.json/dist-tags
+15 http 404 http://localhost:15443/-/package/package.json/dist-tags
+16 verbose headers { 'content-type': 'application/json',
+16 verbose headers   date: 'Mon, 16 Feb 2015 23:46:12 GMT',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'transfer-encoding': 'chunked' }
+17 verbose stack Error: missing : -/package/package.json/dist-tags
+17 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+17 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+17 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+17 verbose stack     at Request.emit (events.js:110:17)
+17 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+17 verbose stack     at Request.emit (events.js:129:20)
+17 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+17 verbose stack     at IncomingMessage.emit (events.js:129:20)
+17 verbose stack     at _stream_readable.js:908:16
+17 verbose stack     at process._tickCallback (node.js:355:11)
+18 verbose statusCode 404
+19 verbose cwd /Users/adamdanielroddy/code/node/node-projects/npm-tutorial
+20 error Darwin 14.1.0
+21 error argv "node" "/usr/local/bin/npm" "dist-tag" "add" "package.json@1.0.1" "[latest]"
+22 error node v0.12.0
+23 error npm  v2.5.1
+24 error code E404
+25 error 404 missing : -/package/package.json/dist-tags
+26 verbose exit [ 1, true ]
