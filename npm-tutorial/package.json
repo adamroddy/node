@@ -1,0 +1,24 @@
+{
+  "name": "node-school-npm",
+  "version": "1.0.0",
+  "description": "node school how-to-npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adamroddy/node-projects.git"
+  },
+  "keywords": [
+    "nodeschool",
+    "node.js",
+    "adamroddy"
+  ],
+  "author": "adamroddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamroddy/node-projects/issues"
+  },
+  "homepage": "https://github.com/adamroddy/node-projects"
+}
